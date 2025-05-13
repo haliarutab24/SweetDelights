@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights | Artisan Cake Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Sweet<span>Delights</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Handcrafted Cakes for Every Occasion</h1>
+                <p>Made with love and the finest ingredients</p>
+                <a href="categories.html" class="btn">Explore Our Cakes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cakes -->
+    <section class="featured">
+        <div class="container">
+            <h2>Our Featured Creations</h2>
+            <div class="cake-grid" id="featuredCakes">
+                <!-- Dynamic content loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="offers">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <div class="offer-cards">
+                <div class="offer-card">
+                    <div class="offer-badge">-20%</div>
+                    <img src="images/offer1.jpg" alt="Birthday Cake Offer">
+                    <h3>Birthday Special</h3>
+                    <p>Get 20% off on all birthday cakes this month</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge">Free</div>
+                    <img src="images/offer2.jpg" alt="Delivery Offer">
+                    <h3>Free Delivery</h3>
+                    <p>Free delivery on orders over $50</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge">New</div>
+                    <img src="images/offer3.jpg" alt="New Flavors">
+                    <h3>New Flavors</h3>
+                    <p>Try our new seasonal flavors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <img src="images/customer1.jpg" alt="Customer">
+                    <p>"The best cake I've ever had! The flavors were amazing and the design was perfect."</p>
+                    <h4>- Sarah Johnson</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="images/customer2.jpg" alt="Customer">
+                    <p>"Our wedding cake was absolutely stunning and tasted even better than it looked!"</p>
+                    <h4>- Michael & Emily</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="images/customer3.jpg" alt="Customer">
+                    <p>"I order cupcakes for my office every month and everyone loves them!"</p>
+                    <h4>- David Thompson</h4>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get updates on new flavors, special offers, and events</p>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Sweet Delights</h3>
+                    <p>Artisan bakery creating beautiful, delicious cakes since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Baker Street, London</li>
+                        <li><i class="fas fa-phone"></i> +44 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@sweetdelights.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 8am - 7pm</li>
+                        <li>Saturday: 9am - 8pm</li>
+                        <li>Sunday: 10am - 6pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Sweet Delights. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

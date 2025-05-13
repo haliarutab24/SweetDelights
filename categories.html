@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Categories | Sweet Delights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Sweet<span>Delights</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Categories Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Cake Categories</h1>
+            <p>Explore our wide range of delicious cakes</p>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="birthday">Birthday</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="cupcakes">Cupcakes</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search cakes..." id="searchInput">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+   <!-- In the cake-categories section -->
+<section class="cake-categories">
+    <div class="container">
+      <div class="cake-grid" id="categoryCakes">
+        <!-- Birthday Cakes -->
+        <div class="cake-card birthday" data-category="birthday">
+          <div class="cake-img">
+            <img src="images/birthday_cake.jpg" alt="Colorful birthday cake with candles">
+          </div>
+          <div class="cake-info">
+            <h3>Birthday Bliss</h3>
+            <p>Colorful and fun cakes perfect for any birthday celebration</p>
+            <div class="cake-price">
+              <span class="price">$45+</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Wedding Cakes -->
+        <div class="cake-card wedding" data-category="wedding">
+          <div class="cake-img">
+            <img src="images/wedding-cake.jpeg" alt="Elegant three-tier wedding cake">
+          </div>
+          <div class="cake-info">
+            <h3>Elegant Wedding</h3>
+            <p>Beautiful tiered cakes for your special day</p>
+            <div class="cake-price">
+              <span class="price">$200+</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cupcakes -->
+        <div class="cake-card cupcakes" data-category="cupcakes">
+          <div class="cake-img">
+            <img src="images/cupcakes.jpg" alt="Assorted decorated cupcakes">
+          </div>
+          <div class="cake-info">
+            <h3>Delightful Desserts</h3>
+            <p>Perfect individual treats for any occasion</p>
+            <div class="cake-price">
+              <span class="price">$25/dozen</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Desserts -->
+      <div class="cake-card desserts" data-category="desserts">
+        <div class="cake-img">
+          <img src="images/desserts.jpg" alt="Assorted delicious desserts">
+        </div>
+        <div class="cake-info">
+          <h3>Decadent Desserts</h3>
+          <p>Sweet treats including cheesecakes, mousses, and more</p>
+          <div class="cake-price">
+            <span class="price">$8+ each</span>
+            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+       <!-- Seasonal Cakes -->
+
+       <div class="cake-card seasonal" data-category="seasonal">
+        <div class="cake-img">
+          <img src="images/seasonal_cakes.jpg" alt="Seasonal themed cake">
+        </div>
+        <div class="cake-info">
+          <h3>Seasonal Specials</h3>
+          <p>Festive cakes for holidays and special occasions</p>
+          <div class="cake-price">
+            <span class="price">$55+</span>
+            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+        <!-- Add more categories as needed -->
+      </div>
+    </div>
+  </section>
+
+    <!-- Cake Details Modal -->
+    <div class="modal" id="cakeModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Dynamic content loaded via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Sweet Delights</h3>
+                    <p>Artisan bakery creating beautiful, delicious cakes since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Baker Street, London</li>
+                        <li><i class="fas fa-phone"></i> +44 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@sweetdelights.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 8am - 7pm</li>
+                        <li>Saturday: 9am - 8pm</li>
+                        <li>Sunday: 10am - 6pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Sweet Delights. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
